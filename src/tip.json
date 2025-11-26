@@ -1,0 +1,82 @@
+{
+  "experience": {
+    "label": "Mẹo về kinh nghiệm",
+    "good": [
+      "Sử dụng động từ hành động như 'dẫn đầu', 'cải tiến', hoặc 'tạo ra'",
+      "Sử dụng dấu đầu dòng",
+      "Làm nổi bật thành tích của bạn với các dấu đầu dòng ngắn gọn",
+      "Giữ mô tả ngắn gọn và rõ ràng",
+      "Mục tiêu là 1–2 dòng mỗi dấu để dễ đọc nhanh",
+      "Thêm số liệu khi có thể"
+    ],
+    "bad": [
+      "Không được viết tắt chức danh công việc",
+      "Viết đầy đủ chức danh công việc để dễ hiểu",
+      "Không sử dụng 'tôi' hoặc câu đầy đủ",
+      "Giữ dấu đầu dòng ngắn, bắt đầu với động từ hành động"
+    ]
+  },
+  "education": {
+    "label": "Mẹo về học vấn",
+    "good": [
+      "Liệt kê tên trường, bằng cấp và năm tốt nghiệp đầy đủ",
+      "Chỉ nêu những thành tích hoặc dự án nổi bật liên quan đến công việc ứng tuyển",
+      "Giữ thông tin ngắn gọn, dễ đọc",
+      "Sử dụng dấu đầu dòng đơn giản, tránh viết dài dòng"
+    ],
+    "bad": [
+      "Không liệt kê những khóa học không liên quan",
+      "Không viết tắt tên trường hoặc bằng cấp",
+      "Không phóng đại thành tích"
+    ]
+  },
+  "skills": {
+    "label": "Mẹo về kỹ năng",
+    "good": [
+      "Liệt kê kỹ năng chính liên quan đến công việc",
+      "Chia kỹ năng theo nhóm nếu nhiều loại (ví dụ: Frontend, Backend, Tools)",
+      "Thêm mức độ thành thạo nếu cần (Ví dụ: Tiến trình, Thành thạo, Chuyên gia)"
+    ],
+    "bad": [
+      "Không liệt kê kỹ năng không liên quan",
+      "Không phóng đại mức độ thành thạo"
+    ]
+  },
+  "projects": {
+    "label": "Mẹo về dự án",
+    "good": [
+      "Nêu tên dự án và vai trò của bạn",
+      "Mô tả mục tiêu và kết quả đạt được ngắn gọn",
+      "Sử dụng số liệu để chứng minh kết quả khi có thể",
+      "Chỉ nêu dự án liên quan đến công việc ứng tuyển"
+    ],
+    "bad": [
+      "Không mô tả dài dòng hoặc lan man",
+      "Không nêu dự án không liên quan"
+    ]
+  },
+  "certifications": {
+    "label": "Mẹo về chứng chỉ",
+    "good": [
+      "Liệt kê tên chứng chỉ, tổ chức cấp và năm nhận",
+      "Chỉ đưa chứng chỉ liên quan đến công việc ứng tuyển",
+      "Giữ danh sách ngắn gọn, ưu tiên chứng chỉ giá trị nhất"
+    ],
+    "bad": [
+      "Không liệt kê chứng chỉ hết hạn hoặc không liên quan",
+      "Không viết tắt tên chứng chỉ"
+    ]
+  },
+  "activities": {
+    "label": "Mẹo về hoạt động",
+    "good": [
+      "Liệt kê các hoạt động ngoại khóa, tình nguyện hoặc tổ chức có liên quan",
+      "Nhấn mạnh vai trò và đóng góp của bạn",
+      "Giữ mô tả ngắn gọn, dễ đọc"
+    ],
+    "bad": [
+      "Không nêu hoạt động không liên quan",
+      "Không mô tả dài dòng, lan man"
+    ]
+  }
+}

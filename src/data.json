@@ -1,0 +1,81 @@
+{
+  "personalInfo": {
+    "name": "John Doe",
+    "photoUrl": "https://cdn0.iconfinder.com/data/icons/user-pictures/100/malecostume-512.png",
+    "title": "Full Stack Developer",
+    "location": "Hà Nội, Việt Nam",
+    "phone": "+84 912345678",
+    "email": "johndoe@example.com"
+  },
+
+  "experience": [
+    {
+      "year": "06/2022 - Hiện tại",
+      "company": "Công ty ABC",
+      "position": "Frontend Developer",
+      "description": "Phát triển giao diện người dùng với React, tối ưu hiệu suất và trải nghiệm người dùng."
+    },
+    {
+      "year": "01/2021 - 05/2022",
+      "company": "Công ty XYZ",
+      "position": "Intern Developer",
+      "description": "Tham gia phát triển module quản lý người dùng và giao diện dashboard nội bộ."
+    }
+  ],
+
+  "education": [
+    {
+      "year": "2018 - 2022",
+      "degree": "Cử nhân Công nghệ Thông tin",
+      "institution": "Đại học Bách Khoa Hà Nội",
+      "description": "Tốt nghiệp loại Giỏi, tham gia CLB lập trình và cuộc thi AI Hackathon 2021."
+    }
+  ],
+
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "ReactJS",
+    "NodeJS",
+    "MongoDB",
+    "Git & GitHub"
+  ],
+
+  "projects": [
+    {
+      "title": "Website Quản Lý Sinh Viên",
+      "link": "https://github.com/johndoe/student-manager",
+      "description": "Xây dựng website quản lý sinh viên sử dụng MERN stack. Hỗ trợ CRUD, đăng nhập, phân quyền."
+    },
+    {
+      "title": "Ứng dụng Ghi chú Cá nhân",
+      "link": "https://github.com/johndoe/note-app",
+      "description": "Ứng dụng ghi chú đơn giản sử dụng ReactJS và Firebase Authentication."
+    }
+  ],
+
+  "certifications": [
+    {
+      "year": "2023",
+      "title": "Chứng chỉ Lập trình Web Fullstack",
+      "institution": "FUNiX",
+      "description": "Hoàn thành khóa học Fullstack với ReactJS, NodeJS và MongoDB."
+    },
+    {
+      "year": "2022",
+      "title": "Chứng chỉ JavaScript Nâng cao",
+      "institution": "Udemy",
+      "description": "Khóa học chuyên sâu về ES6+, bất đồng bộ và tối ưu hiệu suất JS."
+    }
+  ],
+
+  "activities": [
+    {
+      "title": "Thành viên CLB Lập trình Đại học Bách Khoa"
+    },
+    {
+      "title": "Tình nguyện viên TechForGood Hackathon 2023"
+    }
+  ]
+}

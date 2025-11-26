@@ -1,0 +1,142 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+.mainContent {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', Helvetica, sans-serif;
+	// display: flex;
+
+	.left {
+		width: 32%;
+		background-color: #e0e0e0;
+		// color: #fff;
+		position: absolute;
+		left: 0;
+		height: 100%;
+		overflow: hidden;
+		overflow-y: auto;
+	}
+
+	.right {
+		width: 68%;
+		position: absolute;
+		right: 0;
+		height: 100%;
+		overflow: hidden;
+		overflow-y: auto;
+	}
+
+	.printBtn {
+		padding: 10px 15px;
+		border-radius: 5px;
+		font-size: 18px;
+		outline: none;
+		border: none;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		margin: 10px 25px;
+		color: #fff;
+		cursor: pointer;
+		background-color: #1e1e1ecc;
+		transition: ease-in-out 200ms;
+
+		&:hover {
+			box-shadow: 0 0 25px 0 #4e4e4e;
+		}
+	}
+}
+
+/* ===== Resume Builder Layout ===== */
+.resume-builder-page {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  background: #f3f6fa;
+  min-height: 100vh;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+/* ===== Left Form ===== */
+.builder-left {
+  flex: 0.45;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  overflow-y: auto;
+  max-height: calc(100vh - 40px);
+}
+
+/* ===== Right Preview Area ===== */
+.builder-right {
+  flex: 0.55;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #f9fbfd;
+  border-radius: 12px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  overflow-y: auto;
+  max-height: calc(100vh - 40px);
+}
+
+/* ===== Resume Preview (CV khổ A4) ===== */
+.resume {
+  width: 210mm;
+  min-height: 297mm;
+  background: inherit;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  padding: 32px 40px;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ===== Download / Print Button ===== */
+.printBtn {
+  margin-top: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s ease;
+  align-self: flex-end;
+}
+
+.printBtn:hover {
+  background-color: #0056b3;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .resume-builder-page {
+    flex-direction: column;
+  }
+
+  .builder-left,
+  .builder-right {
+    width: 100%;
+    max-height: none;
+	justify-content: center;
+  }
+
+  .resume {
+    width: 100%;
+    min-height: auto;
+  }
+}
+
+

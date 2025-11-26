@@ -1,0 +1,85 @@
+.profile-card {
+  display: flex;
+  gap: 30px;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px #e9e9e9;
+  margin-top: 20px;
+}
+
+/* Avatar Section layout */
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Avatar đẹp và hiện đại */
+.avatar-section img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  background: #f7f7f7;
+  
+  box-shadow: 
+    0 4px 10px rgba(0, 0, 0, 0.15),
+    0 0 0 4px #e8eefd; /* viền xanh nhạt tạo cảm giác premium */
+  
+  transition: 0.25s ease-in-out;
+}
+
+/* Hover nhẹ nhàng */
+.avatar-section img:hover {
+  transform: scale(1.03);
+  box-shadow: 
+    0 6px 16px rgba(0, 0, 0, 0.22),
+    0 0 0 4px #dce6ff; 
+}
+
+/* Nút chọn ảnh bo tròn đẹp */
+.avatar-upload {
+  margin-top: 14px;
+  padding: 8px 16px;
+  background: #2a72ff;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.25s;
+  font-weight: 500;
+}
+
+.avatar-upload:hover {
+  background: #1f5ed6;
+  transform: translateY(-2px);
+}
+
+.form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section label {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.form-section input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn-save {
+  margin-top: 20px;
+  padding: 10px;
+  background: #2a72ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

@@ -1,0 +1,271 @@
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+  color: #333;
+}
+
+/* HEADER */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+/* PROFILE SECTION */
+.profile-section h3,
+.resume-section h3,
+.template-section h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+}
+
+.profile-card {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-left {
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid #eee;
+}
+
+.profile-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-right label {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.profile-right input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* BUTTONS */
+.btn-save,
+.btn-small,
+.resume-card button,
+.template-card button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-save:hover,
+.btn-small:hover,
+.resume-card button:hover,
+.template-card button:hover {
+  background: #0056b3;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #aaa;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: #eee;
+}
+
+/* RESUME LIST */
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.resume-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.resume-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+/* TEMPLATES */
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.template-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.template-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* HOME DASHBOARD */
+.dashboard-home {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+.welcome-box {
+  background: linear-gradient(90deg, #a1c4fd, #c2e9fb);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.welcome-box h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.welcome-box p {
+  margin: 5px 0 0 0;
+  font-size: 1rem;
+  color: #334155;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.dash-card {
+  background-color: #f8fafc;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.dash-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-box {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #60a5fa;
+}
+
+.suggest-box {
+  background-color: #fff7ed;
+  padding: 15px 20px;
+  border-left: 6px solid #fcd34d;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #44403c;
+}
+
+/* Cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.dash-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: 0.25s ease;
+}
+
+.dash-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.icon-box {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Suggestion box */
+.suggest-box {
+  margin-top: 40px;
+  background: #eef5ff;
+  border-left: 4px solid #3b82f6;
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: #333;
+  font-size: 15px;
+}
+
+/* Smooth fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Nút Hủy */
+.btn-cancel {
+  background: #f87171; /* đỏ nhạt */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.btn-cancel:hover {
+  background: #ef4444; /* đỏ đậm khi hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}

@@ -1,0 +1,118 @@
+/* ===== HEADER - Transparent when top, solid when scrolled ===== */
+.custom-navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #fff; /* nền trắng mặc định */
+  box-shadow: none;
+  padding: 14px 0;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar.scrolled {
+  background-color: #e8efff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+/* ===== LOGO ===== */
+.logo-btn {
+  font-size: 1.6rem;
+  color: #0b3d91;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 20px;
+  outline: none;
+}
+
+.logo-btn:hover,
+.logo-btn:focus {
+  color: #0b3d91;
+  outline: none;
+  box-shadow: none;
+}
+
+.logo-btn:active {
+  transform: scale(0.97);
+}
+
+.highlight {
+  color: #007bff;
+}
+
+/* ===== NAV LINKS ===== */
+.nav-link {
+  color: #333 !important;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease, transform 0.2s ease;
+  text-decoration: none !important; /* bỏ gạch chân */
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+  text-decoration: none !important; /* đảm bảo không underline */
+  transform: translateY(-2px); /* hiệu ứng nhẹ khi hover */
+}
+
+/* 🚫 Bỏ hoàn toàn hiệu ứng underline pseudo-element */
+.nav-link::after {
+  display: none !important;
+}
+
+/* ===== AVATAR ===== */
+.user-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.user-avatar:hover {
+  transform: scale(1.1);
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056d2;
+}
+
+.btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+  background: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+  }
+
+  .user-info {
+    flex-direction: column;
+    text-align: center;
+  }
+}

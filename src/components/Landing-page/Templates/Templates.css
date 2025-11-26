@@ -1,0 +1,113 @@
+.templates-section {
+  text-align: center;
+}
+
+.templates-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.templates-desc {
+  color: #6b7280;
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Nút TẤT CẢ CV đã chỉnh */
+.btn-all-cv {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 26px;
+  background: linear-gradient(90deg, #0066ff, #0044cc);
+  color: #fff;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .25s ease;
+  box-shadow: 0 4px 14px rgba(0, 102, 255, 0.25);
+}
+
+.btn-all-cv:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 102, 255, 0.35);
+}
+
+/* GRID */
+.templates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+/* CARD */
+.template-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  max-width: 320px;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.template-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.2);
+}
+
+/* ẢNH — FULL HIỂN THỊ, KHÔNG CẮT */
+.template-image {
+  width: 100%;
+  background: #f9fafb;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.template-image img {
+  width: 100%;
+  height: auto !important;
+  object-fit: contain !important; /* ⭐ Hiển thị full không bị crop */
+  display: block;
+}
+
+/* CONTENT */
+.template-content {
+  padding: 20px 15px 25px;
+}
+
+.template-content h5 {
+  font-size: 1.1rem;
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.btn-template {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+.btn-template:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .templates-grid {
+    gap: 1.5rem;
+  }
+}

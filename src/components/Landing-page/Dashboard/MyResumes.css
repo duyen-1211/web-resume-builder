@@ -1,0 +1,125 @@
+.page {
+  padding: 30px;
+  background: #f5f6fa;
+  min-height: 100vh;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 25px;
+}
+
+.resume-card {
+  background: #fff;
+  padding: 22px 18px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.resume-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.resume-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.resume-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 6px 0 4px 0;
+}
+
+.resume-card p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.resume-actions {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary,
+.btn-danger {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+/* Chỉnh sửa */
+.btn-primary {
+  background-color: #2a72ff;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #0056d6;
+  transform: translateY(-2px);
+}
+
+/* Nhân bản */
+.resume-actions .btn-secondary {
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.resume-actions .btn-secondary:hover {
+  background-color: #3a9c3a;
+  transform: translateY(-2px);
+}
+
+/* Xóa */
+.resume-actions .btn-danger {
+  background-color: #ff4d4f;
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.resume-actions .btn-danger:hover {
+  background-color: #d93638;
+}
+
+/* Nút thêm mới */
+.add-new {
+  border: 2px dashed #b5b5b5;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #fafafa;
+}
+.add-new:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.add-new span {
+  font-size: 48px;
+  color: #b5b5b5;
+}

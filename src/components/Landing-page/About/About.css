@@ -1,0 +1,144 @@
+/* ===== ABOUT SECTION (Modern Elegant Style) ===== */
+.about-section {
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f8ff 100%);
+  padding: 100px 0;
+  color: #222;
+  overflow: hidden;
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+/* Hiệu ứng ánh sáng mờ ở hai góc */
+.about-section::before,
+.about-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.about-section::before {
+  top: -80px;
+  right: -120px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(0, 123, 255, 0.12), transparent 70%);
+}
+
+.about-section::after {
+  bottom: -100px;
+  left: -120px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(0, 91, 255, 0.1), transparent 70%);
+}
+
+/* Tiêu đề */
+.about-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0b3d91;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Gạch trang trí dưới tiêu đề */
+.underline {
+  width: 90px;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #00a2ff);
+  border-radius: 10px;
+  margin-bottom: 40px;
+  animation: growLine 1s ease forwards;
+}
+
+/* Nội dung chính */
+.about-content {
+  max-width: 850px;
+  line-height: 1.9;
+  font-size: 1.05rem;
+  color: #333;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  padding: 45px;
+  margin: 0 auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1s ease 0.2s forwards;
+}
+
+.about-content strong {
+  color: #007bff;
+}
+
+/* Nút chính */
+.main-button {
+  background: linear-gradient(135deg, #007bff, #00a2ff);
+  border: none;
+  padding: 12px 38px;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.25);
+  margin-top: 15px;
+}
+
+.main-button:hover {
+  background: linear-gradient(135deg, #0056d2, #0040a8);
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 91, 255, 0.35);
+}
+
+.main-button a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1.05rem;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes growLine {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 90px;
+    opacity: 1;
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .about-section {
+    padding: 70px 20px;
+  }
+
+  .about-title {
+    font-size: 1.9rem;
+  }
+
+  .about-content {
+    font-size: 1rem;
+    padding: 30px 20px;
+  }
+
+  .main-button {
+    padding: 10px 28px;
+  }
+}

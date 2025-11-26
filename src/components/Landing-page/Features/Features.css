@@ -1,0 +1,84 @@
+/* ===== FEATURES SECTION ===== */
+.features-section {
+  background: linear-gradient(to bottom, #f9fbff 0%, #ffffff 100%);
+  padding: 100px 0;
+  color: #1e1e1e;
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+.features-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0b3d91;
+}
+
+.features-title span {
+  color: #007bff;
+}
+
+.feature-box {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 123, 255, 0.15);
+}
+
+.feature-icon {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 20px;
+}
+
+.feature-box h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0b3d91;
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* CTA Button */
+.main-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #007bff, #0056d2);
+  color: #fff !important;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 91, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.main-button:hover {
+  background: linear-gradient(135deg, #0056d2, #003f99);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 91, 255, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .features-section {
+    padding: 70px 20px;
+  }
+
+  .features-title {
+    font-size: 1.9rem;
+  }
+
+  .feature-box {
+    padding: 25px;
+  }
+}

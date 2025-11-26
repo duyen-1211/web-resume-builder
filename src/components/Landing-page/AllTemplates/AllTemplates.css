@@ -1,0 +1,135 @@
+/* Container chính */
+.all-templates-container {
+  width: 100%;
+  padding: 100px 0 30px; 
+  text-align: center;
+}
+
+/* ===== TITLE ===== */
+.at-header {
+  margin-bottom: 20px;
+}
+
+.at-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.at-desc {
+  font-size: 1.1rem;
+  color: #4b5563;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ===== FILTER BAR ===== */
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  margin: 35px 0;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 10px 18px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.filter-btn:hover {
+  color: #111;
+}
+
+.filter-btn.active {
+  color: #2563eb;
+  border-bottom: 3px solid #2563eb;
+}
+
+/* ===== TEMPLATE GRID - 3 CV 1 HÀNG ===== */
+.templates-grid-full {
+  margin-top: 30px;
+  padding: 0 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột */
+  gap: 35px;
+  justify-items: center;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .templates-grid-full {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .templates-grid-full {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* ===== TEMPLATE CARD ===== */
+.template-card-big {
+  position: relative; /* cần cho nút overlay */
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover card */
+.template-card-big:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Hình CV */
+.template-card-big img {
+  width: auto;
+  max-width: 100%;
+  max-height: 450px; /* ảnh gọn, không phóng to */
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+}
+
+/* ===== NÚT CHỌN TEMPLATE ===== */
+.btn-select-template {
+  position: absolute;
+  bottom: 16px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Hiển thị nút khi hover card */
+.template-card-big:hover .btn-select-template {
+  opacity: 1;
+  transform: translateY(-4px);
+}
+
+/* Hover nút */
+.btn-select-template:hover {
+  background: #1f5ed6;
+}
